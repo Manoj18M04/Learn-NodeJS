@@ -1,0 +1,33 @@
+<h3>Student Management System</h3>
+<p><a href="/addUser" class="addbtn">Add User</a></p>
+
+{{#if msg}}
+<div class="alert-2">
+    {{msg}}
+</div>
+{{/if}}
+
+<table>
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>City</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each rows}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.city}}</td>
+            <td><a href="/editUser/{{this.id}}" class="edit">Edit</a></td>
+            <td><a onclick="return confirm('You sure want to delete ?')" href="/deleteUser/{{this.id}}" class="delete">Delete</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

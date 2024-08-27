@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    height: auto;
+    width: 700px;
+    background-color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 25px;
+    color: tomato;
+    padding: 15px;
+    border-bottom: 1px solid #afafaf;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: right;
+    padding: 5px;
+}
+
+
+table {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    align-self: center;
+}
+
+
+table thead td {
+    padding: 5px;
+    background-color: lightslategray;
+    color: white;
+}
+
+table tbody td {
+    padding: 10px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgb(196, 199, 202);
+}
+
+.edit, .delete, .addbtn {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 4px 15px 4px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.edit {
+    background-color: blueviolet;
+}
+
+.addbtn {
+    background-color:coral;
+    bottom: 30px;
+}
+
+.form-group {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.form-group label, form-group input {
+    display: block;
+}
+
+button {
+    color: white;
+    background-color: blueviolet;
+    padding: 4px 15px 4px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+
+.alert {
+    padding: 5px;
+    background-color: darkcyan;
+    width: 99%;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.alert-2 {
+    padding: 5px;
+    background-color: rgb(241, 65, 65);
+    width: 99%;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
